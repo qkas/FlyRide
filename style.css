@@ -1,6 +1,6 @@
 body {
     background-color: #303030;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: #fff;
     text-align: center;
 }
@@ -9,15 +9,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #008075;
     color: #fff;
+    border-radius: 5px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 a {
@@ -33,36 +33,82 @@ nav ul {
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0px 10px;
 }
 
 nav a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-transform: uppercase;
+    transition: 0.2s;
 }
 
-nav a:hover, .sivut a.active {
+.sivut a:hover, .sivut a.active, .kieli a:hover {
     background-color: #fff;
     color: #333;
 }
 
+.mobile-sivut, #dropdown-sivut {
+    display: none;
+}
+
+/* Mobiililaitteiden dropdown-valikko */
+@media only screen and (max-width: 844px) {
+    header {
+        padding-left: 24px;
+    }
+    h1 {
+        flex-grow: 1;
+    }
+    .sivut {
+        display: none;
+    }
+    .mobile-sivut {
+        display: flex;
+    }
+    #dropdown-sivut {
+        display: none;
+        position: absolute;
+        right: 156px;
+    }
+}
+
+.kieli {
+    margin-left: 10px;
+    width: 80px;
+}
+
+#dropdown-sivut a {
+    background-color: #009689;
+    text-decoration: none;
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+}
+
 h2 {
     font-size: 30px;
+    font-family: Consolas, monaco, monospace;
+    margin-bottom: 10px;
 }
 
 h3 {
     margin-top: 20px;
     font-size: 22px;
+    font-family: Consolas, monaco, monospace;
+    margin-bottom: 10px;
 }
 
 p {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0px 10px;
 }
 
 img {
@@ -74,9 +120,14 @@ img {
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-#kauppanappi button {
+button {
+    margin-top: 20px;
     padding: 12px 20px;
     border-radius: 20px;
     background-color: #008075;
@@ -92,7 +143,9 @@ img {
 
 button a {
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-transform: uppercase
 }
 
 footer {
@@ -116,16 +169,7 @@ img {
 
 /* Etusivulla alhaalla napit palautteenantoon ja yhteydenottoon */
 #palautejayhteydenotto button {
-    padding: 12px 30px;
-    border-radius: 20px;
-    background-color: #008075;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin: 20px 5px;
 }
 
 #palautejayhteydenotto button:hover {

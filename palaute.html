@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c39f856afb.js" crossorigin="anonymous"></script>
   <title>FlyRide palaute - Anna palautetta täyttämällä lomakkeemme.</title>
 </head>
 <body>
@@ -18,14 +19,25 @@
         <li><a href="yhteys.html">Ota yhteyttä</a></li>
       </ul>
     </nav>
+    <nav class="mobile-sivut">
+      <div id="dropdown-sivut">
+        <a href="index.html">Etusivu</a>
+        <a href="kauppa.html">Kauppa</a>
+        <a href="palaute.html">Anna palautetta</a>
+        <a href="yhteys.html">Ota yhteyttä</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </nav>
     <script src="script.js"></script>
     <nav class="kieli">
-        <a href="enpalaute.html">ENGLISH</a>
+      <a href="enindex.html">ENG <i class="fa-solid fa-globe"></i></a>
     </nav>
   </header>
   <main>
     <section>
-        <h2>Anna meille palautetta parantaaksemme palveluamme.</h2>
+        <h2>Anna palautetta.</h2>
         <p>Täytä alla olevat kohdat. Arvostamme palautettattasi.</p>
         <form action="/" class="forms">
             <input type="text" placeholder="Etunumi Sukunimi">

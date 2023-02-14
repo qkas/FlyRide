@@ -154,10 +154,17 @@ footer {
     text-align: center;
 }
 
+
 #kauppa .laudat,
 #kauppa .tarvikkeet {
     display: flex;
-    margin: 20px 0px;
+    margin: 0 0;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#kauppa .laudat {
+    margin-top: 40px;
 }
 
 #kauppa .laudat img,
@@ -169,7 +176,6 @@ footer {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    margin: 0px 5px;
 }
 
 #palautejayhteydenotto button {

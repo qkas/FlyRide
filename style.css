@@ -101,25 +101,26 @@ h2 {
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 22px;
     font-family: Consolas, monaco, monospace;
     margin-bottom: 10px;
 }
 
-p {
-    margin: 0px 30px;
+h4 {
+    margin: 5px;
 }
 
-img {
+p {
+    margin: 0px 20px;
+}
+
+#tietoja img {
     max-width: 80%;
     height: auto;
     width: 80%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px auto;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -153,21 +154,24 @@ footer {
     text-align: center;
 }
 
-.kuvarivi {
+#kauppa .laudat,
+#kauppa .tarvikkeet {
     display: flex;
-    justify-content: space-between;
+    margin: 20px 0px;
 }
 
-.kuva-teksti {
-    width: 30%;
-    text-align: center;
-  }
-
-img {
-    width: 100%;
+#kauppa .laudat img,
+#kauppa .tarvikkeet img {
+    max-width: 80%;
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin: 0px 5px;
 }
 
-/* Etusivulla alhaalla napit palautteenantoon ja yhteydenottoon */
 #palautejayhteydenotto button {
     margin: 20px 5px;
 }
@@ -176,7 +180,6 @@ img {
     background-color: #00ccbb;
 }
 
-/* Forms sekoilut */
 .forms {
     display: flex;
     flex-direction: column;

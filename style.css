@@ -166,8 +166,8 @@ footer {
     align-items: center;
 }
 
-#kauppa .laudat {
-    margin-top: 40px;
+#kauppa .laudat, #kauppa .tarvikkeet {
+    margin-top: 30px;
 }
 
 #kauppa .laudat img,

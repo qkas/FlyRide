@@ -50,11 +50,6 @@ nav a {
     transition: 0.2s;
 }
 
-.sivut a:hover, .sivut a.active, .kieli a:hover {
-    background-color: #fff;
-    color: #333;
-}
-
 .mobile-sivut, #dropdown-sivut {
     display: none;
 }
@@ -80,6 +75,23 @@ nav a {
     }
     h4 {
         font-size: 14px
+    }
+    #dropdown-sivut a.active {
+        background-color: #00ccbb;
+    }
+}
+
+/* Ei mobiililautteille (hoverit pois) */
+@media only screen and (min-width: 844px) {
+    .sivut a:hover, .sivut a.active, .kieli a:hover {
+        background-color: #fff;
+        color: #333;
+    }
+    #kauppanappi button:hover {
+        background-color: #00ccbb;
+    }
+    #palautejayhteydenotto button:hover {
+        background-color: #00ccbb;
     }
 }
 
@@ -141,10 +153,6 @@ button {
     cursor: pointer;
 }
 
-#kauppanappi button:hover {
-    background-color: #00ccbb;
-}
-
 button a {
     text-decoration: none;
     color: #fff;
@@ -183,10 +191,6 @@ footer {
 
 #palautejayhteydenotto button {
     margin: 20px 5px;
-}
-
-#palautejayhteydenotto button:hover {
-    background-color: #00ccbb;
 }
 
 .forms {

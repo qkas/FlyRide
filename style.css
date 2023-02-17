@@ -13,11 +13,14 @@ header {
     background-color: #008075;
     color: #fff;
     border-radius: 5px;
+    background: linear-gradient(320deg, #00b2a3, #00aa9b, #008075);
 }
 
 h1 {
     font-size: 40px;
     margin: 0;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    
 }
 
 h1 a {
@@ -76,6 +79,15 @@ nav a {
     h4 {
         font-size: 14px
     }
+    #dropdown-sivut a {
+        background-color: #009689;
+        text-decoration: none;
+        color: #fff;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        text-transform: uppercase;
+        align-items: center;
+    }
+
     #dropdown-sivut a.active {
         background-color: #00ccbb;
     }
@@ -98,15 +110,6 @@ nav a {
 .kieli {
     margin-left: 10px;
     width: 80px;
-}
-
-#dropdown-sivut a {
-    background-color: #009689;
-    text-decoration: none;
-    color: #fff;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-    text-transform: uppercase;
-    align-items: center;
 }
 
 h2 {

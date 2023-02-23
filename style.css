@@ -220,6 +220,11 @@ footer {
     margin: 0 auto;
 }
 
+.forms label {
+    margin-bottom: 5px;
+    align-self: start;
+}
+
 .forms input[type="text"],
 .forms input[type="email"] {
     width: 100%;
@@ -261,7 +266,6 @@ footer {
 
 .forms .slider {
     width: 100%;
-    margin-top: 14px;;
     margin-bottom: 6px;
     appearance: none;
     height: 14px;
@@ -283,6 +287,6 @@ datalist {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    width: 99%;
+    width: 98%;
     margin-bottom: 16px;
 }

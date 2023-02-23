@@ -44,9 +44,15 @@
         <h2>Ota yhteyttä.</h2>
         <p>Täytä alla olevat kohdat. Vastaamme heti, kun voimme.</p>
         <form action="/" class="forms">
-            <input type="text" placeholder="Etunumi Sukunimi">
-            <input type="email" placeholder="Sähköposti">
-            <textarea placeholder="Kirjoita viestisi tähän..." rows="5"></textarea>
+            <label for="nimi">Mikä on nimesi?</label>
+            <input name="nimi" type="text" placeholder="Etunumi Sukunimi">
+
+            <label for="sposti">Syötä sähköpostisi.</label>
+            <input name="sposti" type="email" placeholder="esimerkki@esimerkki.com">
+
+            <label for="viesti">Mitä asiasi koskee?</label>
+            <textarea name="viesti" placeholder="Kirjoita viestisi tähän..." rows="4" maxlength="400"></textarea>
+            
             <button type="submit" href="/">Lähetä</button>
         </form>
     </section>

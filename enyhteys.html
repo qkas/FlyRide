@@ -44,9 +44,15 @@
         <h2>Contact us.</h2>
         <p>Fill in our form and we'll respond as soon as we can.</p>
         <form action="/" class="forms">
-            <input type="text" placeholder="Firstname Lastname">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Write your message here..." rows="5"></textarea>
+            <label for="nimi">What is your name?</label>
+            <input name="nimi" type="text" placeholder="Firstname Lastname">
+
+            <label for="sposti">Give us your email.</label>
+            <input name="sposti" type="email" placeholder="example@example.com">
+
+            <label for="viesti">What do you have to tell us?</label>
+            <textarea name="viesti" placeholder="Write your message here..." rows="4" maxlength="400"></textarea>
+
             <button type="submit" href="/">Send</button>
         </form>
     </section>

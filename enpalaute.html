@@ -44,8 +44,10 @@
         <h2>Give us feedback.</h2>
         <p>Fill in our form and tell us what's on your mind.</p>
         <form action="/" class="forms">
+            <label for="nimi">What is your name?</label>
             <input type="text" placeholder="Firstname Lastname">
-            <label>How did we do?</label>
+            
+            <label for="arvio">How did we do?</label>
             <input type="range" min="0" max="5" class="slider">
             <datalist id="tickmarks">
               <option value="0" label="0"></option>
@@ -56,7 +58,9 @@
               <option value="5" label="5"></option>
             </datalist>
 
-            <textarea placeholder="Write your message here..." rows="5"></textarea>
+            <label for="viesti">How can we improve?</label>
+            <textarea placeholder="Write your message here..." rows="4" maxlength="400"></textarea>
+            
             <button type="submit" href="/">Send</button>
         </form>
     </section>

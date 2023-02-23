@@ -44,8 +44,10 @@
         <h2>Anna palautetta.</h2>
         <p>Täytä alla olevat kohdat. Arvostamme palautettattasi.</p>
         <form action="/" class="forms">
+            <label for="nimi">Mikä on nimesi?</label>
             <input type="text" placeholder="Etunumi Sukunimi">
-            <label>Miten onnistuimme?</label>
+
+            <label for="arvio">Miten onnistuimme?</label>
             <input type="range" min="0" max="5" class="slider">
             <datalist id="tickmarks">
               <option value="0" label="0"></option>
@@ -56,7 +58,9 @@
               <option value="5" label="5"></option>
             </datalist>
 
-            <textarea placeholder="Kirjoita viestisi tähän..." rows="5"></textarea>
+            <label for="viesti">Missä voisimme parantaa?</label>
+            <textarea placeholder="Kirjoita viestisi tähän..." rows="4" maxlength="400"></textarea>
+            
             <button type="submit" href="/">Lähetä</button>
         </form>
     </section>
